@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
 
-import configStore from "./store";
+import store from "./store";
 
 import "./app.less";
-
-const store = configStore();
 
 class App extends Component {
   componentDidMount() {}
