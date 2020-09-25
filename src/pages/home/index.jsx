@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { View, Text } from "@tarojs/components";
 
-import "./index.scss";
+import style from "./index.scss";
+
+console.log(style);
 
 @connect(({ common }) => ({
   common,
@@ -20,7 +22,7 @@ class Index extends Component {
 
   render() {
     return (
-      <View className="index">
+      <View className={style.index}>
         <View>
           <Text>Hello, World</Text>
         </View>
