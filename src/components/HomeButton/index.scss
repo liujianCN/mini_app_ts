@@ -1,0 +1,50 @@
+button {
+  background-color: #09c;
+  border: none;
+  border-radius: 0.25em;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.ripple {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ripple:before {
+  animation: ripple 2s ease-out infinite;
+  border: solid 2px #09c;
+  border-radius: 1em;
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ripple:after {
+  animation: ripple 2s 1s ease-out infinite;
+  border: solid 2px #09c;
+  border-radius: 1em;
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 0.25;
+  }
+
+  100% {
+    border-radius: 2em;
+    opacity: 0;
+    transform: scale(3);
+  }
+}

@@ -1,0 +1,41 @@
+.carList {
+  display: flex;
+  padding: 100px 10px 0;
+}
+
+.carItem {
+  flex: 1;
+  padding: 0 40px;
+  .picItem {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    text-align: center;
+    .pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text {
+    text-align: center;
+    font-size: 22px;
+    // color: ;
+  }
+}
+
+.selectCar {
+  background: rgba(45, 182, 236, 0.2);
+  border-radius: 4px;
+}
+
+.button {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}

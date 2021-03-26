@@ -1,17 +1,22 @@
+export const pages = [
+  "pages/home/index",
+  "pages/search/index",
+  "pages/profile/index",
+  "pages/carSelect/index",
+  "pages/building/index",
+  "pages/detail/index",
+];
 export default {
-  pages: [
-    "pages/home/index",
-    "pages/search/index",
-    "pages/index/index",
-    "pages/profile/index",
-  ],
+  pages,
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#fff",
     navigationBarTitleText: "WeChat",
     navigationBarTextStyle: "black",
+    backgroundColor: "#dfdfdf",
   },
   tabBar: {
+    borderStyle: "white",
     list: [
       {
         pagePath: "pages/home/index",

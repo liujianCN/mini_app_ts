@@ -53,7 +53,7 @@ class Home extends Component {
           current={tab}
           tabList={[
             { title: "科一" },
-            { title: "科二" },
+            // { title: "科二" },
             // { title: "科三" },
             // { title: "科四" },
           ]}
@@ -119,20 +119,6 @@ class Home extends Component {
               </View>
             </View>
           </AtTabsPane>
-          {/* <AtTabsPane current={tab} index={1}>
-            <Button className={style.buildingText}>
-              功能开发中...
-            </Button>
-          </AtTabsPane> */}
-          {/*
-          <AtTabsPane current={tab} index={2}>
-            <Image className={style.buildingImg} src={building} />
-            <View className={style.buildingText}>功能开发中...</View>
-          </AtTabsPane>
-          <AtTabsPane current={tab} index={3}>
-            <Image className={style.buildingImg} src={building} />
-            <View className={style.buildingText}>功能开发中...</View>
-          </AtTabsPane> */}
         </AtTabs>
       </View>
     );

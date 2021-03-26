@@ -1,0 +1,17 @@
+.customHeader {
+  display: flex;
+  align-items: center;
+  background: #c6ffdd;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.customHeaderText {
+  flex: 1;
+  text-align: center;
+}
+
+.customHeaderIcon {
+  padding-left: 20px;
+  font-size: 24px;
+  color: #ccc;
+}

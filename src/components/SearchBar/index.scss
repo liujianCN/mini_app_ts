@@ -1,0 +1,35 @@
+.searchContent {
+  padding: 12px 18px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    transform-origin: center;
+    box-sizing: border-box;
+    pointer-events: none;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    border: 0 solid #d6e4ef;
+    transform: scale(0.5);
+    border-bottom-width: 1px;
+  }
+}
+.searchBar {
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    color: #999;
+    font-size: 26px !important;
+    margin: 0 10px;
+  }
+}

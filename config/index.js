@@ -1,4 +1,7 @@
+const path = require("path");
+
 const isDev = process.env.NODE_ENV === "development";
+const resolve = (p) => path.resolve(__dirname, "..", p);
 
 const config = {
   projectName: "coupon",
@@ -18,6 +21,19 @@ const config = {
     options: {},
   },
   framework: "react",
+  alias: {
+    // "@": resolve("src"),
+    "@/project": resolve("project.config.json"),
+    "@/package": resolve("package.json"),
+    "@/image": resolve("src/image"),
+    "@/components": resolve("src/components"),
+    "@/pages": resolve("src/pages"),
+    "@/services": resolve("src/services"),
+    "@/store": resolve("src/store"),
+    "@/models": resolve("src/store/models"),
+    "@/selector": resolve("src/store/selector"),
+    "@/utils": resolve("src/utils"),
+  },
   mini: {
     postcss: {
       pxtransform: {
@@ -27,7 +43,7 @@ const config = {
       url: {
         enable: true,
         config: {
-          limit: 1024, // 设定转换尺寸上限
+          limit: 1024 * 5, // 设定转换尺寸上限
         },
       },
       cssModules: {
